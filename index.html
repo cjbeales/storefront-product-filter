@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCommerce Product Filter</title>
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-content">
+        <div class="app-container">
+            <div class="products-content">
+                <!-- Nav -->
+                <div class="products-nav">
+                    <div class="product-category">
+                        <ul id="popular">
+                            <li data-filter="popular" id="clearAll">Clear Filters</li>
+                        </ul>
+                    </div>
+                    <div class="product-category">
+                        <h3>Mens</h3>
+                        <ul id="mens">
+                            <li data-filter="m-baseLayer">Base Layers</li>
+                            <li data-filter="m-bottoms">Bottoms</li>
+                            <li data-filter="m-hoodies">Hoodies</li>
+                        </ul>
+                    </div>
+                    <div class="product-category">
+                        <h3>Womens</h3>
+                        <ul id="womens">
+                            <li data-filter="f-bottoms">Bottoms</li>
+                            <li data-filter="f-leggings">Leggings</li>
+                            <li data-filter="f-hoodies">Hoodies</li>
+                        </ul>
+                    </div>
+                    <div class="product-category">
+                        <h3>Accessories</h3>
+                        <ul id="accessories">
+                            <li data-filter="accessories">View All</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Grid -->
+                <div class="product-grid">
+                    <h2 class="section-title active" data-filterType="popular">Top Sellers</h2>
+                    <!-- Mens Baselayers -->
+                    <h2 class="section-title" data-filterType="m-baseLayer">Mens Baselayers</h2>
+                    <div class="product popular" data-filterType="m-baseLayer">
+                        <img src="/assets/img/mens/baselayers/baselayer1.jpg" alt="Baselayer 1">
+                        <p><strong>Seamless T-shirt</strong></p>
+                        <span class="color">Black</span>
+                        <span class="price">£40.00</span>
+                    </div>
+                    <div class="product" data-filterType="m-baseLayer">
+                        <img src="/assets/img/mens/baselayers/baselayer2.jpg" alt="Baselayer 2">
+                        <p><strong>Seamless Long Sleeve</strong></p>
+                        <span class="color">Black</span>
+                        <span class="price">£45.00</span>
+                    </div>
+                    <div class="product" data-filterType="m-baseLayer">
+                        <img src="/assets/img/mens/baselayers/baselayer3.jpg" alt="Baselayer 3">
+                        <p><strong>Seamless Spats</strong></p>
+                        <span class="color">Black</span>
+                        <span class="price">£45.00</span>
+                    </div>
+                    <div class="product popular" data-filterType="m-baseLayer">
+                        <img src="/assets/img/mens/baselayers/baselayer4.jpg" alt="Baselayer 4">
+                        <p><strong>Long Sleeve Rashguard</strong></p>
+                        <span class="color">Red</span>
+                        <span class="price">£25.00</span>
+                    </div>
+                    <div class="product" data-filterType="m-baseLayer">
+                        <img src="/assets/img/mens/baselayers/baselayer5.jpg" alt="Baselayer 5">
+                        <p><strong>Combat Baselayer Shorts</strong></p>
+                        <span class="color">Red</span>
+                        <span class="price">£25.00</span>
+                    </div>
+                    <div class="product" data-filterType="m-baseLayer">
+                        <img src="/assets/img/mens/baselayers/baselayer6.jpg" alt="Baselayer 6">
+                        <p><strong>Baselayer 3/4 Leggings</strong></p>
+                        <span class="color">Black</span>
+                        <span class="price">£25.00</span>
+                    </div>
+                    <div class="product" data-filterType="m-baseLayer">
+                        <img src="/assets/img/mens/baselayers/baselayer7.jpg" alt="Baselayer 7">
+                        <p><strong>Combat Rashguard</strong></p>
+                        <span class="color">Grey</span>
+                        <span class="price">£20.00</span>
+                    </div>
+
+                    <!-- Mens Bottoms -->
+                    <h2 class="section-title" data-filterType="m-bottoms">Mens Bottoms</h2>
+                    <div class="product popular" data-filterType="m-bottoms">
+                        <img src="/assets/img/mens/bottoms/apex-joggers.jpg" alt="Apex Joggers">
+                        <p><strong>Apex Joggers</strong></p>
+                        <span class="color">Black</span>
+                        <span class="price">£50.00</span>
+                    </div>
+                    <div class="product" data-filterType="m-bottoms">
+                        <img src="/assets/img/mens/bottoms/crest-joggers.jpg" alt="Crest Joggers">
+                        <p><strong>Crest Joggers</strong></p>
+                        <span class="color">Claret</span>
+                        <span class="price">£25.00</span>
+                    </div>
+                    <div class="product popular" data-filterType="m-bottoms">
+                        <img src="/assets/img/mens/bottoms/luxe-legacy-joggers-black.jpg"
+                            alt="Luxe Legacy Joggers Black">
+                        <p><strong>Luxe Legacy Joggers</strong></p>
+                        <span class="color">Black</span>
+                        <span class="price">£45.00</span>
+                    </div>
+                    <div class="product" data-filterType="m-bottoms">
+                        <img src="/assets/img/mens/bottoms/luxe-legacy-joggers.jpg" alt="Luxe Legacy Joggers">
+                        <p><strong>Luxe Legacy Joggers</strong></p>
+                        <span class="color">Light Blue</span>
+                        <span class="price">£45.00</span>
+                    </div>
+                    <div class="product" data-filterType="m-bottoms">
+                        <img src="/assets/img/mens/bottoms/reboot-pants.jpg" alt="Reboot Pants">
+                        <p><strong>Reboot Pants</strong></p>
+                        <span class="color">Petrol Blue</span>
+                        <span class="price">£45.00</span>
+                    </div>
+                    <div class="product popular" data-filterType="m-bottoms">
+                        <img src="/assets/img/mens/bottoms/track-joggers.jpg" alt="Track Joggers">
+                        <p><strong>Track Joggers</strong></p>
+                        <span class="color">Green</span>
+                        <span class="price">£40.00</span>
+                    </div>
+
+                    <!-- Mens Hoodies -->
+                    <h2 class="section-title" data-filterType="m-hoodies">Mens Hoodies</h2>
+                    <div class="product" data-filterType="m-hoodies">
+                        <img src="/assets/img/mens/hoodies/legacy-hoodie.jpg" alt="Legacy Zip Hoodie">
+                        <p><strong>Legacy Zip Hoodie</strong></p>
+                        <span class="color">Black</span>
+                        <span class="price">£45.00</span>
+                    </div>
+                    <div class="product" data-filterType="m-hoodies">
+                        <img src="/assets/img/mens/hoodies/compund-hoodie-sand.jpg" alt="Compund Hoodie Sand">
+                        <p><strong>Compound Hoodie</strong></p>
+                        <span class="color">Sand</span>
+                        <span class="price">£45.00</span>
+                    </div>
+                    <div class="product" data-filterType="m-hoodies">
+                        <img src="/assets/img/mens/hoodies/cres-hoodie-dblue.jpg" alt="Crest Hoodie Dark Blue">
+                        <p><strong>Crest Hoodie</strong></p>
+                        <span class="color">Dark Blue</span>
+                        <span class="price">£25.00</span>
+                    </div>
+                    <div class="product popular" data-filterType="m-hoodies">
+                        <img src="/assets/img/mens/hoodies/compound-zip-hoodie.jpg" alt="Compund Zip Hoodie">
+                        <p><strong>Compund Zip Hoodie</strong></p>
+                        <span class="color">Black Marl</span>
+                        <span class="price">£40.00</span>
+                    </div>
+                    <div class="product popular" data-filterType="m-hoodies">
+                        <img src="/assets/img/mens/hoodies/luxe-lightblue.jpg" alt="Luxe Hoodie">
+                        <p><strong>Luxe Hoodie</strong></p>
+                        <span class="color">Light Blue</span>
+                        <span class="price">£45.00</span>
+                    </div>
+
+                    <!-- Female Bottoms -->
+                    <h2 class="section-title" data-filterType="f-bottoms">Womens Bottoms</h2>
+                    <div class="product" data-filterType="f-bottoms">
+                        <img src="/assets/img/womens/bottoms/combat-joggers-greymarl-40.jpg"
+                            alt="Combat Joggers Grey Marl">
+                        <p><strong>Combat Joggers</strong></p>
+                        <span class="color">Grey Marl</span>
+                        <span class="price">£40.00</span>
+                    </div>
+                    <div class="product" data-filterType="f-bottoms">
+                        <img src="/assets/img/womens/bottoms/rewind-joggers-black-40.jpg" alt="Rewind Jogges Black">
+                        <p><strong>Rewind Jogges</strong></p>
+                        <span class="color">Black</span>
+                        <span class="price">£40.00</span>
+                    </div>
+                    <div class="product" data-filterType="f-bottoms">
+                        <img src="/assets/img/womens/bottoms/training-joggers-charcol-30.jpg"
+                            alt="Training Jogges Charcol">
+                        <p><strong>Training Jogges</strong></p>
+                        <span class="color">Charcol</span>
+                        <span class="price">£30.00</span>
+                    </div>
+                    <div class="product popular" data-filterType="f-bottoms">
+                        <img src="/assets/img/womens/bottoms/training-joggers-lgreen-30.jpg"
+                            alt="Training Joggers Light Green">
+                        <p><strong>Training Joggers</strong></p>
+                        <span class="color">Light Green</span>
+                        <span class="price">£30.00</span>
+                    </div>
+                    <div class="product popular" data-filterType="f-bottoms">
+                        <img src="/assets/img/womens/bottoms/venture-joggers-black-40.jpg" alt="Venture Joggers Black">
+                        <p><strong>Venture Joggers</strong></p>
+                        <span class="color">Black</span>
+                        <span class="price">£40.00</span>
+                    </div>
+
+                    <!-- Womens Leggings -->
+                    <h2 class="section-title" data-filterType="f-leggings">Womens Leggings</h2>
+                    <div class="product" data-filterType="f-leggings">
+                        <img src="/assets/img/womens/leggings/cropeped-black-20.jpg" alt="Cropped Leggings Black">
+                        <p><strong>Cropped Leggings</strong></p>
+                        <span class="color">Black</span>
+                        <span class="price">£20.00</span>
+                    </div>
+                    <div class="product" data-filterType="f-leggings">
+                        <img src="/assets/img/womens/leggings/cropped-blue-20.jpg" alt="Cropped Leggings Blue">
+                        <p><strong>Cropped Leggings</strong></p>
+                        <span class="color">Blue</span>
+                        <span class="price">£20.00</span>
+                    </div>
+                    <div class="product" data-filterType="f-leggings">
+                        <img src="/assets/img/womens/leggings/cropped-burgandy-20.jpg" alt="Cropped Leggings Burgandy">
+                        <p><strong>Cropped Leggings</strong></p>
+                        <span class="color">Burgandy</span>
+                        <span class="price">£20.00</span>
+                    </div>
+                    <div class="product" data-filterType="f-leggings">
+                        <img src="/assets/img/womens/leggings/sol-lift-35-coral.jpg" alt="Leggings Coral">
+                        <p><strong>Sol Lift Leggings</strong></p>
+                        <span class="color">Coral</span>
+                        <span class="price">£40.00</span>
+                    </div>
+                    <div class="product" data-filterType="f-leggings">
+                        <img src="/assets/img/womens/leggings/sol-lift-blue-35.jpg" alt="Sol Lift Leggings Blue">
+                        <p><strong>Sol Lift Leggings</strong></p>
+                        <span class="color">Blue</span>
+                        <span class="price">£35.00</span>
+                    </div>
+                    <div class="product" data-filterType="f-leggings">
+                        <img src="/assets/img/womens/leggings/sol-lift-grey-35.jpg" alt="Sol Lift Leggings Grey">
+                        <p><strong>Sol Lift Leggings</strong></p>
+                        <span class="color">Grey</span>
+                        <span class="price">£35.00</span>
+                    </div>
+                    <div class="product popular" data-filterType="f-leggings">
+                        <img src="/assets/img/womens/leggings/sol-lift-lblue-35.jpg" alt="Sol Lift Leggings Light Blue">
+                        <p><strong>Sol Lift Leggings</strong></p>
+                        <span class="color">Light Blue</span>
+                        <span class="price">£35.00</span>
+                    </div>
+
+                    <!-- Womens Hoodies -->
+                    <h2 class="section-title" data-filterType="f-hoodies">Womens Hoodies</h2>
+                    <div class="product" data-filterType="f-hoodies">
+                        <img src="/assets/img/womens/hoodies/combat-sleeveless-black-35.jpg"
+                            alt="Combat Sleeveless Hoodie Black">
+                        <p><strong>Combat Sleeveless</strong></p>
+                        <span class="color">Black</span>
+                        <span class="price">£35.00</span>
+                    </div>
+                    <div class="product" data-filterType="f-hoodies">
+                        <img src="/assets/img/womens/hoodies/combat-sleeveless-grey-35.jpg"
+                            alt="Combat Sleeveless Hoodie Grey">
+                        <p><strong>Combat Sleeveless</strong></p>
+                        <span class="color">Grey</span>
+                        <span class="price">£35.00</span>
+                    </div>
+                    <div class="product" data-filterType="f-hoodies">
+                        <img src="/assets/img/womens/hoodies/cropped-hoodie-blue-30.jpg" alt="Cropped Hoodie Blue">
+                        <p><strong>Cropped Hoodie</strong></p>
+                        <span class="color">Blue</span>
+                        <span class="price">£30.00</span>
+                    </div>
+                    <div class="product" data-filterType="f-hoodies">
+                        <img src="/assets/img/womens/hoodies/sol-lift-oversized-coralmarl-40.jpg"
+                            alt="Sol Lift Oversized Hoodie Pink">
+                        <p><strong>Sol Lift Oversized Hoodie</strong></p>
+                        <span class="color">Pink</span>
+                        <span class="price">£40.00</span>
+                    </div>
+                    <div class="product popular" data-filterType="f-hoodies">
+                        <img src="/assets/img/womens/hoodies/venture-black-40.jpg" alt="Venture Hoodie Black">
+                        <p><strong>Venture Hoodie</strong></p>
+                        <span class="color">Black</span>
+                        <span class="price">£40.00</span>
+                    </div>
+                    <div class="product" data-filterType="f-hoodies">
+                        <img src="/assets/img/womens/hoodies/venture-teal-40.jpg" alt="Venture Hoodie Teal">
+                        <p><strong>Venture Hoodie</strong></p>
+                        <span class="color">Teal</span>
+                        <span class="price">£40.00</span>
+                    </div>
+
+                    <!-- Accessories -->
+                    <h2 class="section-title" data-filterType="accessories">Accessories</h2>
+                    <div class="product" data-filterType="accessories">
+                        <img src="/assets/img/accessories/buckle-keychain-8.jpg" alt="Buckle Keychain">
+                        <p><strong>Buckle Keychain</strong></p>
+                        <span class="color">Black</span>
+                        <span class="price">£8.00</span>
+                    </div>
+                    <div class="product popular" data-filterType="accessories">
+                        <img src="/assets/img/accessories/fruit-infuser-10.jpg" alt="Fruit Infuser">
+                        <p><strong>Fruit Infuser</strong></p>
+                        <span class="color">Black</span>
+                        <span class="price">£10.00</span>
+                    </div>
+                    <div class="product popular" data-filterType="accessories">
+                        <img src="/assets/img/accessories/horizon-beach-towel-blue-20.jpg" alt="Horizon Beach Towel">
+                        <p><strong>Horizon Beach Towel</strong></p>
+                        <span class="color">Blue</span>
+                        <span class="price">£20.00</span>
+                    </div>
+                    <div class="product" data-filterType="accessories">
+                        <img src="/assets/img/accessories/premium-legacy-backpack-lgrey-30.jpg"
+                            alt="Premium Legacy Backpack">
+                        <p><strong>Premium Legacy Backpack</strong></p>
+                        <span class="color">Light Grey</span>
+                        <span class="price">£30.00</span>
+                    </div>
+                    <div class="product" data-filterType="accessories">
+                        <img src="/assets/img/accessories/running-belt-pink-12.jpg" alt="Running Belt">
+                        <p><strong>Running Belt</strong></p>
+                        <span class="color">Pink</span>
+                        <span class="price">£12.00</span>
+                    </div>
+                    <div class="product" data-filterType="accessories">
+                        <img src="/assets/img/accessories/washbag-lgreen-10.jpg" alt="Washbag">
+                        <p><strong>Washbag</strong></p>
+                        <span class="color">Light Green</span>
+                        <span class="price">£10.00</span>
+                    </div>
+                    <div class="product" data-filterType="accessories">
+                        <img src="/assets/img/accessories/wrap-lifting-gloves-black-20.jpg" alt="Wrap Lifting Gloves">
+                        <p><strong>Wrap Lifting Gloves</strong></p>
+                        <span class="color">Black</span>
+                        <span class="price">£20.00</span>
+                    </div>
+                    <div class="product popular" data-filterType="accessories">
+                        <img src="/assets/img/accessories/wrist-straps-20.jpg" alt="Wrist Straps Black">
+                        <p><strong>Wrist Straps</strong></p>
+                        <span class="color">Black</span>
+                        <span class="price">£20.00</span>
+                    </div>
+                    <div class="product" data-filterType="accessories">
+                        <img src="/assets/img/accessories/wrist-straps-pink-20.jpg" alt="Wrist Straps Pink">
+                        <p><strong>Wrist Straps</strong></p>
+                        <span class="color">Pink</span>
+                        <span class="price">£20.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/assets/js/app.js"></script>
+</body>
+
+</html>
