@@ -213,16 +213,19 @@ button {
                 @media all and (max-width: 600px) {
                     width: 100%;
 
-                    img {
-                        width: 100%;
-                        margin-bottom: 10px;
-                    }
+                    // img {
+                    //     width: 100%;
+                    //     margin-bottom: 10px;
+                    // }
                 }
 
                 img {
                     width: 100%;
-                    margin-bottom: 10px;
+                    max-width: 100%;
                     height: auto;
+                    margin: auto;
+                    display: block;
+                    position: relative;
                 }
 
                 p {
