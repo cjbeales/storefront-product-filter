@@ -195,11 +195,9 @@ button {
                 width: 20%;
                 padding: 10px;
                 margin-bottom: 25px;
-                justify-content: center;
-                flex-wrap: wrap;
 
                 &.active {
-                    display: flex;
+                    display: block;
                 }
 
                 @media all and (max-width: 1200px) {
@@ -212,18 +210,13 @@ button {
 
                 @media all and (max-width: 600px) {
                     width: 100%;
-
-                    // img {
-                    //     width: 100%;
-                    //     margin-bottom: 10px;
-                    // }
                 }
 
                 img {
                     width: 100%;
                     max-width: 100%;
                     height: auto;
-                    margin: auto;
+                    margin: 0 auto 20px auto;
                     display: block;
                     position: relative;
                 }
